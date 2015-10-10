@@ -84,25 +84,5 @@ d3.json("/cities/", function(error, data){
 		.style('font-size', '12px');
 
 });
-	/*d3.json("/cities/", function(data){
-		var canvas = d3.select("body").append("svg")
-					.attr("width", 1000)
-					.attr("height", 1000)
-		canvas.selectAll("rect")
-					.data(data)
-					.enter()
-							.append("rect")
-							.attr("width", function(d){ return d.population/5000; })
-							.attr("height", 48)
-							.attr("y", function(d, i) { return i*50; })
-							.attr("fill", "blue");
-		canvas.selectAll("text")
-				.data(data)
-				.enter()
-						.append("text")
-						.attr("fill", "white")
-						.attr("y", function(d,i) { return i*50+30; })
-						.text(function (d) { return d._id; })
-	});
-*/
+
 });
